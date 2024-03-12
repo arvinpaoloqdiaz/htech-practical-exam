@@ -1,0 +1,119 @@
+/* CSS Reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins;
+}
+:root{
+	--logo-color:rgba(213,253,127,255);
+	--white:rgba(255,255,255,1);
+	--footer-background: rgba(255,169,2,255);
+	--subtitle-color:rgba(128,128,128,1);
+}
+.navbar{
+	top:0;
+	z-index: 100;
+	background: transparent !important;
+	
+}
+.navbar .container {
+	border-bottom: 1px solid white !important;
+}
+.nav-link{
+	color:var(--white);
+}
+.nav-icon {
+	text-decoration: none;
+	color:var(--white);
+	align-self: center;
+}
+.nav-icon:hover,.nav-icon:active{
+	color:var(--footer-background);
+}
+/*navbar background*/
+
+.navbar-brand{
+	font-family: Poppins;
+	font-weight: bold;
+}
+.navbar-brand > span:first-child{
+	color: var(--logo-color);
+}
+/*Hero Section Background*/
+.hero__section{
+	display:grid;
+	place-content: center;
+	background: linear-gradient(0deg, rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("./assets/src/img/hero-img.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+.hero__text{
+	color:var(--white);
+	font-weight: bold;
+	font-size: 5vw;
+}
+.hero__link{
+	bottom:0;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+
+/*Search bar*/
+.search__bar__form{
+	z-index: 0;
+}
+
+.card-text{
+	color:var(--subtitle-color);
+}
+.card__footer span a{
+	color: var(--footer-background);
+}
+.card__footer span a:hover,.card__footer span a:active{
+	color: black;
+}
+.card__footer__by{
+	color:var(--subtitle-color);
+}
+.card__author{
+	color:black	;
+}
+.card-container{
+	padding-block: 1rem;
+}
+/* Footer */
+footer{
+	background: var(--footer-background);
+}
+footer span a{
+	text-decoration: none;
+	color: var(--white);
+}
+.text-overlay{
+	display: grid;
+	place-content: center;
+	position: absolute;
+	min-height: 100%;
+	z-index: 50;
+	background: rgba(0,0,0,0.7);
+}
+#myVideo {
+	position: relative;
+  min-width: 100%; 
+  min-height: 100%;
+
+}
+.video-background{
+}
+/*Custom classes*/
+.text-white{
+	color:var(--white);
+}
+.text-green{
+	color:var(--logo-color);
+}
+
